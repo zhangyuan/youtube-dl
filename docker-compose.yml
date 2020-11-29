@@ -5,4 +5,3 @@ services:
     volumes:
       - ./data/:/data
     working_dir: /data
-    user: 1000:1000
