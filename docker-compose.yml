@@ -1,7 +1,8 @@
 version: "3.8"
 services:
   youtube-dl:
-    build: 192.168.3.98:5001/youtube-dl
+    image: 192.168.3.98:5001/youtube-dl
     volumes:
       - ./data/:/data
     working_dir: /data
+    user: 1000:1000
