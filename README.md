@@ -1,5 +1,11 @@
 # youtube-dl
 
+## Build the image
+
+```
+./bin/build.sh
+```
+
 ## Download videos
 
 ```
