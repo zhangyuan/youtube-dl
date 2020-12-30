@@ -10,7 +10,7 @@
 
 ```
 docker-compose run youtube-dl youtube-dl \
-  -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' \
+  -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 \
   "VIDEO_URL"
 ```
 
@@ -19,6 +19,6 @@ docker-compose run youtube-dl youtube-dl \
 ```
 docker-compose run youtube-dl youtube-dl \
   --proxy socks5://192.168.3.98:1088 \
-  -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' \
+  -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 \
   "VIDEO_URL"
 ```
