@@ -1,0 +1,16 @@
+#! /bin/sh
+
+set -e
+
+URL=$1
+
+if [ -z $1 ]; then
+  echo "USAGE: bin/youtube-dl URL"
+  exit 1
+fi
+
+echo "Downloading ${URL}"
+
+docker-compose run youtube-dl \
+  youtube-dl  -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' \
+  "${URL}"
