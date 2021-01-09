@@ -9,9 +9,7 @@
 ## Download videos
 
 ```
-docker-compose run youtube-dl youtube-dl \
-  -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 \
-  "VIDEO_URL"
+bin/youtube-dl "VIDEO_URL"
 ```
 
 ## Download videos with proxy
